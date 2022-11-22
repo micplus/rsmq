@@ -1,9 +1,10 @@
 package rsmq_test
 
 import (
-	"rsmq"
 	"testing"
 	"time"
+
+	"github.com/micplus/rsmq"
 
 	"github.com/go-redis/redis/v9"
 )

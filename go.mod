@@ -1,4 +1,4 @@
-module github.com/micplus/rsmq
+module rsmq
 
 go 1.19
 

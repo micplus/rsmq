@@ -4,7 +4,7 @@ Message Queue based on Redis Stream
 
 生产者 -> Redis Stream -> 消费者
 
-封装Redis Stream的基本操作，支持的功能：
+封装Redis Stream消息队列的基本操作，支持的功能：
 
 1. 创建Stream、Group
 2. 生产者向指定Stream逐条插入[]byte

@@ -59,6 +59,10 @@ func NewConsumer(cli *redis.Client, stream, group, name string, block, minIdle t
 	}
 }
 
+func (c *Consumer) Stream() string { return c.stream }
+func (c *Consumer) Group() string  { return c.group }
+func (c *Consumer) Name() string   { return c.name }
+
 // 仅支持单条数据
 func (c *Consumer) Read() (*Message, error) {
 	// Block直到读出数据
